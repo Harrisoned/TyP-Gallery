@@ -1,0 +1,12 @@
+<SEARCH
+	name="TyP"
+	description="TyP Search"
+	action="http://192.168.0.105/"	   
+	showif=""
+	queryCharset="UTF-8"
+	method="GET"
+>
+<input name="page" value="post">
+<input name="s" value="list">
+<input name="tags" user>
+</search>
