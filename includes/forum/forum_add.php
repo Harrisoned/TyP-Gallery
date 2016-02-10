@@ -103,6 +103,7 @@
         $pg = "forum";
 		require "includes/header.php";
 ?>
+<div style="margin-left: 15px;">
 <form method="post" action="">
 	<table><tr><td>
 	Topic:<br/>	
@@ -117,7 +118,7 @@
 	</td></tr>
 	<tr><td>
 	<input type="submit" name="submit" value="Create topic"/>
-	</td></tr></table></form>
+	</td></tr></table></form></div>
 	<script type="text/javascript">
 	//<![CDATA[
 	document.getElementById('conf').value=1;

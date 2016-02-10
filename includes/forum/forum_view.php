@@ -32,7 +32,7 @@
 	require "includes/header.php";
 	$query = "SELECT t1.id, t1.title, t1.post, t1.author, t1.creation_date, t2.creation_post FROM $forum_post_table  AS t1 JOIN $forum_topic_table AS t2 ON t2.id=t1.topic_id WHERE t1.topic_id='$id' ORDER BY id LIMIT $page, $limit";
 	$result = $db->query($query) or die(mysql_error());
-	print'<div id="forum" class="response-list">';
+	print'<div style="margin-left: 15px; margin-right: 15px;"><div id="forum" class="response-list">';
 	while($row = $result->fetch_assoc())
 	{
 		$date_made = $misc->date_words($row['creation_date']);
@@ -95,4 +95,4 @@
 		//]]></script>';
 	}
 ?>
-</div></div></body></html>
+</div></div></div></body></html>

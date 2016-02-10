@@ -314,6 +314,9 @@ table.highlightable {
 table.highlightable > tbody > tr:hover {
   	background: #FFD;
 }
+table.highlightable > tbody > tr > th {
+  	background: #006FFA;
+}
 
 table.highlightable th {
   	color: #fff;

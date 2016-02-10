@@ -10,10 +10,10 @@
     $pg = "forum";
 	require "includes/header.php";
 	
-	echo '<form method="post" action="?page=forum&amp;s=search">
+	echo '<div style="margin-left: 15px; margin-right: 15px;"><form method="post" action="?page=forum&amp;s=search">
 	<input type="text" name="search" value="" style="width: 40%;" />
 	<input type="submit" name="submit" value="Search" />
-	</form>
+	</form><br />
 	<table class="highlightable" width="100%"><tr><th width="60%">Title</th><th width="10%">Created by</th><th width="10%">Updated</th><th width="5%">Replies</th>';
 	if(isset($_GET['pid']) && $_GET['pid'] != "" && is_numeric($_GET['pid']) && $_GET['pid'] >= 0)
 		$page = $db->real_escape_string($_GET['pid']);
@@ -102,4 +102,4 @@ Post:<br />
 <script type="text/javascript">
 //<![CDATA[
 document.getElementById('conf').value=1;
-//]]></script></body></html>
+    //]]></script></div></body></html>

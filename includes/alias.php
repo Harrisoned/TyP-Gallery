@@ -22,8 +22,8 @@
 		}
 	}
 
-	echo 'You can suggest a new alias, but they must be approved by an administrator before they are activated.<br />
-	<div style="color: #ff0000;">An example of how to use this: (Asher is the tag and Ash is the alias.)</div><br /><br />
+	echo '<div style="margin-left: 15px; margin-right: 15px;">You can suggest a new alias, but they must be approved by an administrator before they are activated.<br />
+	<div style="color: #ff0000;">An example of how to use this: (Asher is the tag and Ash is the alias.)</div><br />
 	';
 
 	if(isset($_GET['pid']) && $_GET['pid'] != "" && is_numeric($_GET['pid']) && $_GET['pid'] >= 0)
@@ -58,4 +58,4 @@
 	<div id="paginator">';
 	$misc = new misc();
 	print $misc->pagination($_GET['page'],$sub,$id,$limit,$page_limit,$numrows,$_GET['pid'],$tags);
-?></div></body></html>
+?></div></div></body></html>
